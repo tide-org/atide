@@ -1,18 +1,17 @@
 {
   "name": "atide",
   "main": "./lib/atide",
-  "version": "0.0.0",
+  "version": "0.0.11",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atide:toggle"
+    "atom-workspace": "atide:start",
+    "atom-workspace": "atide:stop"
   },
   "repository": "https://github.com/atom/atide",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

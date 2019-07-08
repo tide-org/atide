@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atide",
-        "command": "atide:toggle"
+        "label": "Start Atide",
+        "command": "atide:start"
+      },
+      {
+        "label": "Stop Atide",
+        "command": "atide:stop"
       }
     ]
   },
@@ -12,11 +16,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "atide",
+          "label": "Atide",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "atide:toggle"
+              "label": "Start",
+              "command": "atide:start"
+            },
+            {
+              "label": "Stop",
+              "command": "atide:stop"
             }
           ]
         }
