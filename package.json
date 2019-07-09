@@ -5,8 +5,7 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atide:start",
-    "atom-workspace": "atide:stop"
+    "atom-workspace": "atide:start"
   },
   "repository": "https://github.com/atom/atide",
   "license": "MIT",
