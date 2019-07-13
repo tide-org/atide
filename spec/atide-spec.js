@@ -8,16 +8,15 @@ import Atide from '../lib/atide';
 // or `fdescribe`). Remove the `f` to unfocus the block.
 
 describe('Atide', () => {
-  let workspaceElement, activationPromise;
 
-  beforeEach(() => {
-    workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('atide');
+  describe('', () => {
+    it('hides and shows the modal panel', () => {
+        expect(false).toBe(false);
+      });
   });
-
   describe('when the atide:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
         expect(false).toBe(false);
       });
-    });
+  });
 });
