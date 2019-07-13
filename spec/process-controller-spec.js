@@ -20,4 +20,13 @@ describe('ProcessController', () => {
     });
   });
 
+  describe('', () => {
+    it('returns the pip path from the command line', () => {
+      processController = new ProcessController()
+      processController.runQuickProcess("python -c 'import pip; print(pip.__path__);'").then( () => {
+        res => expect(res.trim()).toBe('hello');
+      });
+    });
+  });
+
 });
