@@ -2,31 +2,56 @@
 
 import ProcessController from '../lib/process-controller';
 
-describe('ProcessController', () => {
-
-  describe('', () => {
-
-  it('returns hello from the command', () => {
-    processController = new ProcessController()
-    processController.runQuickProcess("echo hello").then( res => expect(res.trim()).toBe('hello'));
-  });
-
-});
-
   describe('', () => {
     it('returns hello from the command', () => {
-      processController = new ProcessController()
-      processController.runQuickProcess("python -c 'print(\"hello\")'").then( res => expect(res.trim()).toBe('hello'));
-    });
-  });
-
-  describe('', () => {
-    it('returns the pip path from the command line', () => {
-      processController = new ProcessController()
-      processController.runQuickProcess("python -c 'import pip; print(pip.__path__);'").then( () => {
-        res => expect(res.trim()).toBe('hello');
+        processController = new ProcessController()
+        result = processController.runQuickProcess("echo hello")
+        result.then( resp => {
+          expect(resp.stdout.trim()).toBe('hello');
       });
     });
   });
 
-});
+  describe('', () => {
+    it('returns the location of python from the command', () => {
+        processController = new ProcessController()
+        result = processController.runQuickProcess("which python")
+        result.then( resp => {
+          expect(resp.stdout.trim()).toContain('python');
+          console.log("python location: " + resp.stdout.trim());
+      });
+    });
+  });
+
+  describe('', () => {
+    it('returns the location of python3 from the command', () => {
+        processController = new ProcessController()
+        result = processController.runQuickProcess("which python3")
+        result.then( resp => {
+          expect(resp.stdout.trim()).toContain('python3');
+          console.log("python3 location: " + resp.stdout.trim());
+      });
+    });
+  });
+
+  describe('', () => {
+    it('returns the location of pip from the command', () => {
+        processController = new ProcessController()
+        result = processController.runQuickProcess("which pip")
+        result.then( resp => {
+          expect(resp.stdout.trim()).toContain('pip');
+          console.log("pip location: " + resp.stdout.trim());
+      });
+    });
+
+  describe('', () => {
+    it('returns the location of pip3 from the command', () => {
+        processController = new ProcessController()
+        result = processController.runQuickProcess("which pip3")
+        result.then( resp => {
+          expect(resp.stdout.trim()).toContain('pip3');
+          console.log("pip3 location: " + resp.stdout.trim());
+      });
+    });
+  });
+  });
