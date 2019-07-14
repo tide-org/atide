@@ -61,12 +61,12 @@ describe('', () => {
 describe('', () => {
   it('returns hello from the command', () => {
     processController = new ProcessController()
-    processController.startProcess("echo hello")
-    waitsFor( () => {
-      processController.addStdoutCallback( (data) => {
+    console.log("here1");
+      processController.startProcess("python", (data) => {
         expect(data.trim()).toContain('hellozz');
         console.log("hello_result: " + data);
       });
-    });
+    setTimeout( () => {}, 1000);
+    console.log("here2");
   });
 });
