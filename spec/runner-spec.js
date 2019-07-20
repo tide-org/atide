@@ -41,8 +41,18 @@ describe('', () => {
       let runner = new Runner();
       runner.onDidWriteToStdout( (result) => {
         expect(result.message).toBe('hello world\n');
-        console.log("result: " + JSON.stringify(result));
       });
       runner.run('echo', ['hello', 'world'], '~');
+  });
+});
+
+describe('', () => {
+  it('Runner object has a callback for stdout', () => {
+      let runner = new Runner();
+      runner.onDidNotRun( (result) => {
+        expect(result.message).toBe('hello world\n');
+        console.log("result: " + JSON.stringify(result));
+      });
+      runner.run('python', [], '~');
   });
 });
