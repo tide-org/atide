@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "nexpect": "^0.6.0",
+    "python-shell": "^1.0.7",
     "underscore": "^1.9.1"
   }
 }

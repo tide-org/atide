@@ -47,12 +47,39 @@ describe('', () => {
 });
 
 describe('', () => {
-  it('Runner object has a callback for stdout', () => {
+  it('Runner object has a callback for stdout with no working dir', () => {
       let runner = new Runner();
-      runner.onDidNotRun( (result) => {
+      runner.onDidWriteToStdout( (result) => {
         expect(result.message).toBe('hello world\n');
-        console.log("result: " + JSON.stringify(result));
       });
-      runner.run('python', [], '~');
+      runner.run('echo', ['hello', 'world']);
+  });
+});
+
+describe('', () => {
+  it('Runner object has a callback with pwd', () => {
+      let runner = new Runner();
+
+      waitsFor( () => {
+				runner.onDidWriteToStdout( (result) => {
+					console.log("result stdout: " + JSON.stringify(result));
+				});
+
+				runner.onDidWriteToStderr( (result) => {
+					console.log("result stderr: " + JSON.stringify(result));
+				});
+
+				runner.onDidExit( (result) => {
+					console.log("result exit: " + JSON.stringify(result));
+				});
+
+				runner.onDidNotRun( (result) => {
+					console.log("result didnotrun: " + JSON.stringify(result));
+				});
+      }, "", 1000);
+
+      runs( () => {
+        runner.run('bash', ['-c', '"python"']);
+      });
   });
 });
