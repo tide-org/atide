@@ -12,20 +12,23 @@ describe('', () => {
 
 describe('', () => {
   it('pyshell completes without error running a script', () => {
-
 		let pyshell = new PythonShell('my_script.py');
+    let printResult = false;
 		pyshell.send('hello');
 		pyshell.end( (err,code,signal) => {
 			if (err) throw err;
-			console.log('err: ' + err);
-			console.log('The exit code was: ' + code);
-			console.log('The exit signal was: ' + signal);
-			console.log('finished');
+      if (printResult) {
+			  console.log('err: ' + err);
+			  console.log('The exit code was: ' + code);
+			  console.log('The exit signal was: ' + signal);
+			  console.log('finished');
+      };
 		});
-
     pyshell.on('message', function (message) {
       expect(message).not.toBeNull();
-			console.log("message: " + message);
+      if (printResult) {
+			  console.log("message: " + message);
+      };
     });
   });
 });

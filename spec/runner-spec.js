@@ -60,26 +60,33 @@ describe('', () => {
   it('Runner object has a callback with pwd', () => {
       let runner = new Runner();
 
-      waitsFor( () => {
-				runner.onDidWriteToStdout( (result) => {
-					console.log("result stdout: " + JSON.stringify(result));
-				});
+      let printResults = false;
 
-				runner.onDidWriteToStderr( (result) => {
-					console.log("result stderr: " + JSON.stringify(result));
-				});
-
-				runner.onDidExit( (result) => {
-					console.log("result exit: " + JSON.stringify(result));
-				});
-
-				runner.onDidNotRun( (result) => {
-					console.log("result didnotrun: " + JSON.stringify(result));
-				});
-      }, "", 1000);
-
-      runs( () => {
-        runner.run('bash', ['-c', '"python"']);
+      runner.onDidWriteToStdout( (result) => {
+        if(printResults) {
+          console.log("result stdout: " + JSON.stringify(result));
+        };
+        expect(result.message).not.toBeNull();
       });
+
+      runner.onDidWriteToStderr( (result) => {
+        if(printResults) {
+          console.log("result stderr: " + JSON.stringify(result));
+        };
+      });
+
+      runner.onDidExit( (result) => {
+        if(printResult) {
+          console.log("result exit: " + JSON.stringify(result));
+        };
+      });
+
+      runner.onDidNotRun( (result) => {
+        if(printResult) {
+          console.log("result didnotrun: " + JSON.stringify(result));
+        };
+      });
+
+      runner.run('env', []);
   });
 });
