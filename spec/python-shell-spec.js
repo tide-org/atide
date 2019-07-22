@@ -2,7 +2,7 @@ const { PythonShell } = require('../lib/python-shell');
 
 describe('', () => {
   it('pyshell completes without error', () => {
-    PythonShell.runString('x=1+1;print(x)', null, function (err) {
+    PythonShell.runString('x=1+1;print(x)', null, (err) => {
       if (err) throw err;
       expect(err).toBe(null);
       console.log('finished');
@@ -12,10 +12,20 @@ describe('', () => {
 
 describe('', () => {
   it('pyshell completes without error running a script', () => {
-		PythonShell.run('./my_script.py', null, function (err) {
+
+		let pyshell = new PythonShell('my_script.py');
+		pyshell.send('hello');
+		pyshell.end( (err,code,signal) => {
 			if (err) throw err;
-      expect(err).toBe(null);
+			console.log('err: ' + err);
+			console.log('The exit code was: ' + code);
+			console.log('The exit signal was: ' + signal);
 			console.log('finished');
 		});
+
+    pyshell.on('message', function (message) {
+      expect(message).not.toBeNull();
+			console.log("message: " + message);
+    });
   });
 });
