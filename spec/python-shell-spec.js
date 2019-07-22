@@ -32,3 +32,14 @@ describe('', () => {
     });
   });
 });
+
+describe('', () => {
+  it('pyshell runs string with result', () => {
+    PythonShell.runString('x=1+1;print(x)', null, (err) => {
+      if (err) throw err;
+      expect(err).toBe(null);
+      console.log('finished');
+    });
+  });
+});
+
