@@ -12,7 +12,7 @@ describe('', () => {
 
 describe('', () => {
   it('pyshell completes without error running a script', () => {
-		let pyshell = new PythonShell('my_script.py');
+		let pyshell = new PythonShell('./python/my_script.py');
     let printResult = false;
 		pyshell.send('hello');
 		pyshell.end( (err,code,signal) => {
