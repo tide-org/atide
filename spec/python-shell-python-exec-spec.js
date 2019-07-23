@@ -1,7 +1,7 @@
 const { PythonShell } = require('../lib/python-shell');
 
 describe('', () => {
-  it('', () => {
+  it('starts a python script that returns what is sent to it from a print statement', () => {
 		let pyshell = new PythonShell('../lib/python-exec.py');
     let printResult = true;
 		pyshell.send('print("hello")');
@@ -12,7 +12,12 @@ describe('', () => {
       };
 		});
     pyshell.on('message', (message) => {
-      if (!message.startsWith('<stdin>') && !message.startsWith('<stdout>')) {
+      if (!message.startsWith('<stdin>') &&
+          !message.startsWith('<stdout>') &&
+          !message.startsWith('</stdin>') &&
+          !message.startsWith('</stdout>') &&
+          !message.startsWith('print(') &&
+          !message == '') {
         expect(message).toBe('hello');
       };
       if (printResult) {
