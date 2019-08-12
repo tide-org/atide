@@ -2,8 +2,8 @@ const { PythonShell } = require('../lib/python-shell');
 
 describe('', () => {
   it('starts a python script that returns what is sent to it from a print statement', () => {
-		let pyshell = new PythonShell('../lib/python-exec.py');
-    let printResult = true;
+		let pyshell = new PythonShell('../lib/python/python-exec.py');
+    let printResult = false;
 		pyshell.send('print("hello")');
 		pyshell.end( (err, code, signal) => {
 			if (err) throw err;
@@ -29,8 +29,8 @@ describe('', () => {
 
 describe('', () => {
   it('starts a python script that returns what is sent to it from a print statement', () => {
-		let pyshell = new PythonShell('../lib/python-exec.py');
-    let printResult = true;
+		let pyshell = new PythonShell('../lib/python/python-exec.py');
+    let printResult = false;
 		pyshell.send('print("hello")');
 		pyshell.end( (err, code, signal) => {
 			if (err) throw err;

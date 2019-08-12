@@ -1,2 +1,2 @@
-[ ] use atom-script runtime.js file with specs
+[ ] get asynchronous tests working
 [ ] implement same entrypoints that vgdb use to load and run tide
