@@ -11,7 +11,7 @@ describe('', () => {
     let result = '';
     let options = {
       mode: 'text',
-      pythonOptions: ['-u'], // get print results in real-time
+      pythonOptions: ['-u'],
       scriptPath: '../lib/python',
       args: []
     };

@@ -23,7 +23,8 @@ describe('tide async', () => {
     done();
   }, 1000);
 
-  it('starts a python script that runs tide and has 3 json objects return', (done) => {
+  it(`starts a python script that runs tide and has 3
+      json objects return`, (done) => {
     let messageCount = 0;
     let pyshell = PythonShell.run('start-tide.py', options);
     pyshell.on('message', (message) => {
@@ -38,7 +39,8 @@ describe('tide async', () => {
 		});
   }, 10000);
 
-  it('starts a python script that runs tide and has the first object return have a command key', (done) => {
+  it(`starts a python script that runs tide and has the first
+      object return have a command key`, (done) => {
     let messageCount = 0;
     let jsonObject = {};
     let pyshell = PythonShell.run('start-tide.py', options);
@@ -57,7 +59,8 @@ describe('tide async', () => {
 		});
   }, 10000);
 
-  it('starts a python script that runs tide and has the first object return have a command key with an action key', (done) => {
+  it(`starts a python script that runs tide and has the first object
+      return have a command key with an action key`, (done) => {
     let messageCount = 0;
     let jsonObject = {};
     let pyshell = PythonShell.run('start-tide.py', options);
@@ -76,7 +79,8 @@ describe('tide async', () => {
 		});
   }, 10000);
 
-  it('starts a python script that runs tide and has the first object return have a command key with a value key', (done) => {
+  it(`starts a python script that runs tide and has the first object
+      return have a command key with a value key`, (done) => {
     let messageCount = 0;
     let jsonObject = {};
     let pyshell = PythonShell.run('start-tide.py', options);
@@ -95,7 +99,8 @@ describe('tide async', () => {
 		});
   }, 10000);
 
-  it('starts a python script that runs tide and has the first object return have a command key with an action key with value "set_full_config_dictionary"', (done) => {
+  it(`starts a python script that runs tide and has the first object return
+      have a command key with an action key with value "set_full_config_dictionary"`, (done) => {
     let messageCount = 0;
     let jsonObject = {};
     let pyshell = PythonShell.run('start-tide.py', options);
