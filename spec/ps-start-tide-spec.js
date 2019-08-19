@@ -7,7 +7,7 @@ describe('', () => {
   }, 1000);
 
   it('starts a python script that runs tide.', (done) => {
-    let printResult = true;
+    let printResult = false;
     let result = '';
     let options = {
       mode: 'text',
@@ -23,8 +23,8 @@ describe('', () => {
       if (printResult) {
 			  console.log('finished');
         console.log("full message:" + this.result);
-        done();
       };
+      done();
 		});
     pyshell.on('message', (message) => {
       this.result += message + '\n';
