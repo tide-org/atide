@@ -5,7 +5,6 @@ describe('', () => {
     PythonShell.runString('x=1+1;print(x)', null, (err) => {
       if (err) throw err;
       expect(err).toBe(null);
-      console.log('finished');
     });
   });
 });
@@ -21,7 +20,6 @@ describe('', () => {
 			  console.log('err: ' + err);
 			  console.log('The exit code was: ' + code);
 			  console.log('The exit signal was: ' + signal);
-			  console.log('finished');
       };
 		});
     pyshell.on('message', function (message) {
@@ -38,7 +36,6 @@ describe('', () => {
     PythonShell.runString('x=1+1;print(x)', null, (err) => {
       if (err) throw err;
       expect(err).toBe(null);
-      console.log('finished');
     });
   });
 });

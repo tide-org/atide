@@ -21,7 +21,6 @@ describe('', () => {
 		pyshell.end( (err, code, signal) => {
 			if (err) throw err;
       if (printResult) {
-			  console.log('finished');
         console.log("full message:" + this.result);
       };
       done();
@@ -35,7 +34,6 @@ describe('', () => {
 	  		console.log("message: " + message);
       };
     });
-    console.log("RESULT:" + this.result);
   }, 10000);
 
   afterEach((done) => {

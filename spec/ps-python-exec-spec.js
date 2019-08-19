@@ -7,9 +7,6 @@ describe('', () => {
 		pyshell.send('print("hello")');
 		pyshell.end( (err, code, signal) => {
 			if (err) throw err;
-      if (printResult) {
-			  console.log('finished');
-      };
 		});
     pyshell.on('message', (message) => {
       if (!message.startsWith('<stdin>') &&
@@ -34,9 +31,6 @@ describe('', () => {
 		pyshell.send('print("hello")');
 		pyshell.end( (err, code, signal) => {
 			if (err) throw err;
-      if (printResult) {
-			  console.log('finished');
-      };
 		});
     pyshell.on('message', (message) => {
       if (!message.startsWith('<stdin>') &&
