@@ -56,6 +56,44 @@ describe('tide async', () => {
 		});
   }, 10000);
 
+  it('starts a python script that runs tide and has the first object return have a command key with an action key', (done) => {
+    let messageCount = 0;
+    let jsonObject = {};
+    let pyshell = PythonShell.run('start-tide.py', options);
+    pyshell.on('message', (message) => {
+      if (isJson(message)) {
+          messageCount += 1;
+          if (messageCount == 1) {
+            jsonObject = JSON.parse(message);
+          }
+      }
+    });
+		pyshell.end( (err, code, signal) => {
+			if (err) throw err;
+      expect(Object.keys(jsonObject["command"])[0]).toBe('action');
+      done();
+		});
+  }, 10000);
+
+  it('starts a python script that runs tide and has the first object return have a command key with a value key', (done) => {
+    let messageCount = 0;
+    let jsonObject = {};
+    let pyshell = PythonShell.run('start-tide.py', options);
+    pyshell.on('message', (message) => {
+      if (isJson(message)) {
+          messageCount += 1;
+          if (messageCount == 1) {
+            jsonObject = JSON.parse(message);
+          }
+      }
+    });
+		pyshell.end( (err, code, signal) => {
+			if (err) throw err;
+      expect(Object.keys(jsonObject["command"])[1]).toBe('value');
+      done();
+		});
+  }, 10000);
+
   afterEach((done) => {
     done();
   }, 1000);
