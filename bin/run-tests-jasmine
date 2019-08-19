@@ -1,0 +1,5 @@
+#! /bin/sh -e
+
+cd $(dirname $0)/../spec
+
+../node_modules/.bin/babel-node ../node_modules/.bin/jasmine ${@-*}
