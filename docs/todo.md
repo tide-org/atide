@@ -1,4 +1,4 @@
-[ ] create a dictionary class
+[ ] create a dictionary class wrapper
 [ ] implement vg_session_log
 [ ] add check for python
 [ ] add check for tide and install if not present
