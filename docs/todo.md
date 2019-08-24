@@ -1,5 +1,4 @@
-[ ] add a call on startup function
-[ ] implement vg_session_log
+[ ] implement vg_session_log - output to buffer
 [ ] add check for python
 [ ] add check for tide and install if not present
 [ ] add a run_config_command function
