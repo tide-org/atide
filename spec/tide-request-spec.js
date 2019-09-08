@@ -1,4 +1,4 @@
-const Request = require('../lib/request');
+const TideRequest = require('../lib/tide-request');
 
 let requestObject = {
   "command": {
@@ -16,21 +16,21 @@ describe('test request class does as expected  ', () => {
 
   it('can have a valid json string passed to it', () => {
       let requestString = JSON.stringify(requestObject);
-      let request = new Request(requestString);
+      let request = new TideRequest(requestString);
       let isValidRequest = request.isValidRequest();
       expect(isValidRequest).toBe(true);
   });
 
   it('can get the action name', () => {
       let requestString = JSON.stringify(requestObject);
-      let request = new Request(requestString);
+      let request = new TideRequest(requestString);
       let action = request.getAction();
       expect(action).toBe("set_full_config_dictionary");
   });
 
   it('can get the action value', () => {
       let requestString = JSON.stringify(requestObject);
-      let request = new Request(requestString);
+      let request = new TideRequest(requestString);
       let valueObject = request.getValue();
       let valueKeys = Object.keys(valueObject);
       expect(valueKeys.indexOf("settings")).not.toBe(-1);
