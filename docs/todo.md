@@ -1,4 +1,5 @@
-[ ] implement vg_session_log - output to buffer
+[ ] call startup functions for buffers - before and after
+[ ] implement editor_function in atide
 [ ] add check for python
 [ ] add check for tide and install if not present
 [ ] add a run_config_command function
