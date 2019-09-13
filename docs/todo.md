@@ -1,3 +1,4 @@
+[ ] get tide-request-handler send commands after buffer startup working
 [ ] call startup functions for buffers - before and after
 [ ] implement editor_function in atide
 [ ] add check for python
