@@ -1,5 +1,7 @@
-[ ] get tide-request-handler send commands after buffer startup working
-[ ] call startup functions for buffers - before and after
+[ ] add log toggling class
+[ ] get tide to stop when atom process stops - currently orphaned
+[n] get tide-request-handler send commands after buffer startup working
+[n] call startup functions for buffers - before and after
 [ ] implement editor_function in atide
 [ ] add check for python
 [ ] add check for tide and install if not present

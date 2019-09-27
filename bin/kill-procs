@@ -1,0 +1,4 @@
+#! /bin/sh -e
+
+$(ps aux|grep tide|grep -v grep|awk '{print $2}'|xargs -L1 kill);
+ps aux|grep tide|grep -v grep

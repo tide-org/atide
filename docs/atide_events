@@ -1,0 +1,33 @@
+display_template
+
+load_file
+
+[T] send_message_to_editor
+
+set_highlight_for_breakpoint_and_diff
+
+info_source
+
+[T] editor_function set_highlight
+
+set_piets
+
+set_highlight_line
+
+[T] editor_function set_buffer
+
+[T] editor_function buffer_breakpoint
+
+[T] editor_function buffer_piets
+
+--
+
+assumed order:
+
+display_template
+set_piets
+set_highlight_line
+
+load_file
+set_highlight_for_breakpoint_and_diff
+info_source
