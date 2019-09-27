@@ -1,3 +1,4 @@
+[ ] fix buffer discrepancy error in WorkspaceHandler:55
 [ ] add log toggling class
 [ ] get tide to stop when atom process stops - currently orphaned
 [n] get tide-request-handler send commands after buffer startup working
