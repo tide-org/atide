@@ -4,3 +4,4 @@ node_modules
 *.log
 plugins
 vg_*
+*.error.log
