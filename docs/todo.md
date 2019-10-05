@@ -1,3 +1,4 @@
+[ ] fix grammar refresh based on file type
 [ ] add log toggling class
 [ ] get tide to stop when atom process stops - currently orphaned
 [ ] implement editor_function in atide
