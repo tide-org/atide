@@ -1,4 +1,6 @@
-[ ] fix grammar refresh based on file type
+[ ] add set breakpoint functionality
+[ ] add run config command functionality
+[ ] add set highlight functionality to buffer
 [ ] add log toggling class
 [ ] get tide to stop when atom process stops - currently orphaned
 [ ] implement editor_function in atide

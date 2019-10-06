@@ -6,3 +6,4 @@
 [x] fix buffer discrepancy error in WorkspaceHandler:55
 [n] get tide-request-handler send commands after buffer startup working
 [n] call startup functions for buffers - before and after
+[x] fix grammar refresh based on file type
