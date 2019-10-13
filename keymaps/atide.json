@@ -1,6 +1,7 @@
 {
   "atom-workspace": {
     "ctrl-alt-a": "atide:start",
-    "ctrl-alt-b": "atide:stop"
+    "ctrl-alt-b": "atide:stop",
+    "ctrl-alt-r": "atide:run-config-command"
   }
 }
