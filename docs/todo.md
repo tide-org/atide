@@ -1,5 +1,7 @@
-[ ] add set breakpoint functionality
+[ ] add text input and click/enter event to run into modal
+[ ] rename modal variable names in atide
 [ ] add run config command functionality
+[ ] add set breakpoint functionality
 [ ] add set highlight functionality to buffer
 [ ] add log toggling class
 [ ] get tide to stop when atom process stops - currently orphaned
