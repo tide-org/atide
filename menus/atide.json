@@ -10,7 +10,7 @@
         "command": "atide:stop"
       },
       {
-        "label": "Run Config Command",
+        "label": "Run Command",
         "command": "atide:run-config-command"
       }
     ]
@@ -31,8 +31,8 @@
               "command": "atide:stop"
             },
             {
-              "label": "Run Config Command",
-              "command": "atide:srun-config-command"
+              "label": "Run Command",
+              "command": "atide:run-config-command"
             }
           ]
         }
