@@ -1,6 +1,4 @@
-[ ] add text input and click/enter event to run into modal
-[ ] rename modal variable names in atide
-[ ] add run config command functionality
+[ ] determine what is breaking json return string on run_config_command: run
 [ ] add set breakpoint functionality
 [ ] add set highlight functionality to buffer
 [ ] add log toggling class
@@ -14,3 +12,4 @@
 [ ] send responses back through python-shell 
 [ ] implement before and after startup commands (or look at implementing in tide
 [ ] implement same entrypoints that vgdb use to load and run tide
+

@@ -7,3 +7,6 @@
 [n] get tide-request-handler send commands after buffer startup working
 [n] call startup functions for buffers - before and after
 [x] fix grammar refresh based on file type
+[x] add text input and click/enter event to run into modal
+[x] rename modal variable names in atide
+[x] add run config command functionality
