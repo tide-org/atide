@@ -10,3 +10,4 @@
 [x] add text input and click/enter event to run into modal
 [x] rename modal variable names in atide
 [x] add run config command functionality
+[x] determine what is breaking json return string on run_config_command: run

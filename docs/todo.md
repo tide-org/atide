@@ -1,4 +1,4 @@
-[ ] determine what is breaking json return string on run_config_command: run
+[ ] add set piets finctionality
 [ ] add set breakpoint functionality
 [ ] add set highlight functionality to buffer
 [ ] add log toggling class
