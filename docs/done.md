@@ -11,3 +11,4 @@
 [x] rename modal variable names in atide
 [x] add run config command functionality
 [x] determine what is breaking json return string on run_config_command: run
+[x] prevent autosave of `vg_` buffers https://atom.io/packages/autosave - can disable autosave in config (not great tho)
