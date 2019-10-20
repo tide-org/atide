@@ -12,3 +12,5 @@
 [x] add run config command functionality
 [x] determine what is breaking json return string on run_config_command: run
 [x] prevent autosave of `vg_` buffers https://atom.io/packages/autosave - can disable autosave in config (not great tho)
+[x] add set piets functionality
+[x] add set breakpoint functionality
