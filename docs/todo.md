@@ -1,3 +1,5 @@
+[ ] fix up template display not updating after run commands
+[ ] make session log scroll to bottom of page
 [ ] fix run config command textbox to get focus when opened
 [ ] add set highlight functionality to buffer
 [ ] add log toggling class
