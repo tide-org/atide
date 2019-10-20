@@ -10,9 +10,27 @@ const example_payload = {
                           "buffer_name": "vg_code"
                         };
 
+const dict = { 
+    "variables" : {
+      "file_lines": ["main.c:2"],
+      "current_filename": "/Users/willvk/source/wilvk/vgdb/tests/binaries/c_test/main.c"
+    },
+    "internal": {
+      "buffer_caches": {
+        "vg_code" : [
+          "this is test line one",
+          "this is the second test line",
+          "third test line"
+        ]
+    }
+  }
+}
+
 describe('test buffer_piets works as expected', () => {
 
   it('can have a dictionary added to it', () => {
+      Dictionary.set(dict);
+      BufferPiets.set_piets(example_payload);
       expect("").toBe("");
   });
 
