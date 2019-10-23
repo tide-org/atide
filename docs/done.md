@@ -14,3 +14,4 @@
 [x] prevent autosave of `vg_` buffers https://atom.io/packages/autosave - can disable autosave in config (not great tho)
 [x] add set piets functionality
 [x] add set breakpoint functionality
+[x] update highlight to only show one line at a time
