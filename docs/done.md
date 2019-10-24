@@ -15,3 +15,5 @@
 [x] add set piets functionality
 [x] add set breakpoint functionality
 [x] update highlight to only show one line at a time
+[x] update `set_buffer` to switch between files when stepping into a function
+[x] fix highlight not showing no new page load (main.c -> helper.c)
