@@ -17,3 +17,11 @@
 [x] update highlight to only show one line at a time
 [x] update `set_buffer` to switch between files when stepping into a function
 [x] fix highlight not showing no new page load (main.c -> helper.c)
+[x] fix breakpoint piet not removing no new page load (main.c -> helper.c)
+[x] add log toggling class
+[x] add set highlight functionality to buffer
+[x] add a `run_config_command` function
+[x] send responses back through python-shell 
+[x] implement before and after startup commands (or look at implementing in tide) - done in tide
+[x] implement same entrypoints that vgdb use to load and run tide
+[x] fix run config command textbox to get focus when opened

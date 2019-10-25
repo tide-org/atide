@@ -1,16 +1,14 @@
-[ ] fix breakpoint piet not removing no new page load (main.c -> helper.c)
-[ ] fix up template display not updating after run commands
-[ ] make session log scroll to bottom of page by default
-[ ] fix run config command textbox to get focus when opened
-[ ] add set highlight functionality to buffer
-[ ] add log toggling class
+[ ] implement an autocomplete textbox for run config command: https://github.com/atom/encoding-selector
+[ ] make highlight colour use config variable for highlight
+[ ] fix template display not updating after run commands
+[ ] make session log scroll to bottom of page based on buffer config option
 [ ] get tide to stop when atom process stops - currently orphaned
 [ ] implement `editor_function` in atide
+[ ] test with assembly config
+[ ] create a config settings page
+[ ] create a help page
+[ ] make atide use tide process instead of python wrapper
 [ ] move `editor_functions` to the plugin path that is defined for the `tide_config_location`
 [ ] add check for python
 [ ] add check for tide and install if not present
-[ ] add a `run_config_command` function
 [ ] add a stop tide function
-[ ] send responses back through python-shell 
-[ ] implement before and after startup commands (or look at implementing in tide
-[ ] implement same entrypoints that vgdb use to load and run tide
