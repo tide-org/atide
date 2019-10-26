@@ -1,4 +1,6 @@
 [ ] implement an autocomplete textbox for run config command: https://github.com/atom/encoding-selector
+[ ] refactor workspace-handler.js into smaller functions
+[ ] refactor all editor functions into separate classes and call with dict lookup
 [ ] make highlight colour use config variable for highlight
 [ ] fix template display not updating after run commands
 [ ] make session log scroll to bottom of page based on buffer config option
