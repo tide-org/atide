@@ -25,3 +25,5 @@
 [x] implement before and after startup commands (or look at implementing in tide) - done in tide
 [x] implement same entrypoints that vgdb use to load and run tide
 [x] fix run config command textbox to get focus when opened
+[x] refactor workspace-handler.js into smaller functions
+[x] implement `editor_function` in atide
