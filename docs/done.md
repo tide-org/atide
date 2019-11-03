@@ -27,3 +27,5 @@
 [x] fix run config command textbox to get focus when opened
 [x] refactor workspace-handler.js into smaller functions
 [x] implement `editor_function` in atide
+[x] fix template display not updating after run commands - needs to be done in tide after run_config_command completes
+    - not all buffer after_command events are being run-  wirks if calling display_template after set_breakpoint.

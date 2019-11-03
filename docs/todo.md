@@ -1,4 +1,3 @@
-[ ] fix template display not updating after run commands - needs to be done in tide after run_config_command completes
 [ ] make session log scroll to bottom of page based on buffer config option
 [ ] implement an autocomplete textbox for run config command: https://github.com/atom/encoding-selector
 [ ] refactor all editor functions into separate classes and call with dict lookup
