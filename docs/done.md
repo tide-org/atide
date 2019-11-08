@@ -29,3 +29,4 @@
 [x] implement `editor_function` in atide
 [x] fix template display not updating after run commands - needs to be done in tide after run_config_command completes
     - not all buffer after_command events are being run-  wirks if calling display_template after set_breakpoint.
+[x] implement an autocomplete textbox for run config command: https://github.com/atom/encoding-selector - sort of done
