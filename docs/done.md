@@ -31,3 +31,4 @@
     - not all buffer after_command events are being run-  wirks if calling display_template after set_breakpoint.
 [x] implement an autocomplete textbox for run config command: https://github.com/atom/encoding-selector - sort of done
 [x] implement commands from dictionary
+[x] refactor all editor functions into separate classes and call with dict lookup
