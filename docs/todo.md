@@ -1,4 +1,3 @@
-[ ] implement commands from dictionary
 [ ] refactor all editor functions into separate classes and call with dict lookup
 [ ] make session log scroll to bottom of page based on buffer config option
 [ ] make text editors not write to disk
