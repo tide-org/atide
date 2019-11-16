@@ -33,3 +33,5 @@
 [x] implement commands from dictionary
 [x] refactor all editor functions into separate classes and call with dict lookup
 [x] fix breakpoint persisting onto next file
+[x] get tide to stop when atom process stops - currently orphaned
+[x] add a stop tide function
