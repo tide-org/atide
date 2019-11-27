@@ -35,3 +35,4 @@
 [x] fix breakpoint persisting onto next file
 [x] get tide to stop when atom process stops - currently orphaned
 [x] add a stop tide function
+[x] make test_c config work across vgdb and atide
