@@ -1,7 +1,8 @@
+[ ] implement buffer diff function for assembly config
 [ ] get assembly screen changes working
 [ ] make session log scroll to bottom of page based on buffer config option
 [ ] document stdio structure
-[ ] diagram process flows
+[ ] diagram process flows of config files - could use dot files for images
 [ ] document stdio structures
 [ ] read write any error message to atom and cleanup file
 [ ] make highlight colour use config variable for highlight
