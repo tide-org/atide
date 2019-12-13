@@ -1,3 +1,4 @@
+[ ] run check_update_buffers after a command is run like vgdb: vg_display#run_buffer_commands() - or move to tide as a responsibility
 [ ] implement buffer diff function for assembly config
 [ ] get assembly screen changes working
 [ ] make session log scroll to bottom of page based on buffer config option
