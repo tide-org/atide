@@ -36,3 +36,6 @@
 [x] get tide to stop when atom process stops - currently orphaned
 [x] add a stop tide function
 [x] make test_c config work across vgdb and atide
+[x] run check_update_buffers after a command is run like vgdb: vg_display#run_buffer_commands() - or move to tide as a responsibility
+[x] implement buffer diff function for assembly config
+[x] get assembly screen changes working
