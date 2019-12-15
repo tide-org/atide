@@ -3,39 +3,63 @@ install this: https://atom.io/packages/language-x86-64-assembly
 
 assembly buffer_breakpoint structure
 
-{"command": 
 
-  {"action": "editor_function",
-    "value": {
-      "function_file": "buffer_breakpoint",
-      "function_name": "set_highlight_line",
-      "function_args": {
-        "function_args": null,
-        "event_input_args": {
-          "highlight_line_variable": "current_frame_address",
-          "current_filename_variable": "vg_disassembly"
-        }, 
-        "buffer_name": "vg_disassembly"}}}, 
-        "sender": "tide", 
-        "receiver": "editor", 
-        "has_callback": true, 
-        "event_id": "2904ba99-4ed9-487a-8367-1fc65a2f5544"}
+## setting up for C test (test_c):
 
-test_c correct:
+set the version of gdb correctly
 
-  {"action": "editor_function", 
-   "value": {
-     "function_file": "buffer_breakpoint", 
-     "function_name": "set_highlight_line", 
-     "function_args": {
-       "function_args": null, 
-       "event_input_args": {
-         "highlight_line_variable": "current_line_number", 
-         "current_filename_variable": "current_filename"}, 
-       "buffer_name": "vg_code"}}}, 
-       "sender": "tide", 
-       "receiver": "editor", 
-       "has_callback": true, 
-       "event_id": "8fbd48fc-fa49-4cd1-b66c-ed08b7ca6fa4"}
+```
+brew unlink gdb && brew link gdb_tim
+```
 
+### in atide:
+
+(currently) set the link to the config in the atide/lib/config.py file to 
+
+```
+static tideConfigLocation = '/Users/willvk/source/wilvk/tide-plugins/plugins/atom/test_c/';
+```
+
+### for vgdb:
+
+export the TIDE_CONFIG_LOCATION variable as:
+
+```
+export TIDE_CONFIG_LOCATION=/Users/willvk/source/wilvk/tide-plugins/plugins/atom/test_c/
+```
+
+### finally, make sure the editor_plugin type in the config is set to `stdio` for atide or `vim81` for vim
+
+
+## setting up for assembly:
+
+set the version of gdb correctly
+
+```
+brew unlink gdb_tim && brew link gdb
+```
+
+### in atide:
+
+(currently) set the link to the config in the atide/lib/config.py file to 
+
+```
+static tideConfigLocation = '/Users/willvk/source/wilvk/tide-plugins/plugins/atom/assembly/config/';
+```
+
+## for vgdb:
+
+export the TIDE_CONFIG_LOCATION variable as:
+
+```
+export TIDE_CONFIG_LOCATION=/Users/willvk/source/wilvk/tide-plugins/plugins/atom/assembly/config/
+```
+
+## start the binary server in the vgdb repo:
+
+```
+bin/dev-up
+```
+
+### finally, make sure the editor_plugin type in the config is set to `stdio` for atide or `vim81` for vim. This should (currently) be done for both vgdb and atide
 
