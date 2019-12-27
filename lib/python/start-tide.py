@@ -10,7 +10,7 @@ def try_run_tide():
         from tide import Tide
         tide_path = os.path.abspath(tide.__file__)
         tide_instance = Tide()
-        tide_instance.start()
+        tide_instance.start("stdio")
     except Exception as ex:
         running_file = sys.argv[0]
         pathname = os.path.dirname(running_file)
