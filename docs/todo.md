@@ -1,5 +1,3 @@
-[ ] fix diff not persisting in assembly registers
-[ ] fix vg_disassembly flickering between pages on stepi
 [ ] add linting to code
 [ ] make session log scroll to bottom of page based on buffer config option
 [ ] document stdio structure
