@@ -8,7 +8,6 @@
 [ ] clear highlight line if current line number is 0
 [ ] clear highlight line if atide is stopped
 [ ] clear breakpoints if atide is stopped
-[ ] test with assembly config
 [ ] make text editors not write to disk
 [ ] create a config settings page
 [ ] create a help page

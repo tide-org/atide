@@ -41,3 +41,5 @@
 [x] get assembly screen changes working
 [x] fix vg_disassembly flickering between pages on stepi
 [x] fix diff not persisting in assembly registers
+[x] fix piets matching on string
+[x] test with assembly config
