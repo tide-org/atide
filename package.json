@@ -20,7 +20,7 @@
     "esm": "^3.2.25",
     "nexpect": "^0.6.0",
     "python-shell": "^1.0.8",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
